@@ -97,7 +97,7 @@ exports.getAllReservations = getAllReservations;
  * @param {*} limit The number of results to return.
  * @return {Promise<[{}]>}  A promise to the properties.
  */
-const getAllProperties = function(options, limit = 10) {
+const getAllProperties = function(options, limit = 11) {
   const queryParams = [];
   let queryString = `SELECT properties.*, avg(property_reviews.rating) as average_rating
   FROM properties
