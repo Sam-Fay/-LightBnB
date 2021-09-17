@@ -148,7 +148,7 @@ exports.getAllProperties = getAllProperties;
 /**
  * Add a property to the database
  * @param {{}} property An object containing all of the property details.
- * @return {Promise<{}>} A promise to the property.
+ * @return {Promise<{}>} A promise to the properties.
  */
 const addProperty = function(property) {
   return db.query(`
