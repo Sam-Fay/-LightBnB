@@ -50,7 +50,7 @@ exports.getUserWithId = getUserWithId;
  * @param {{name: string, password: string, email: string}} user
  * @return {Promise<{}>} A promise to the user.
  */
-const addUser =  function(user) {
+const addUser1 =  function(user) {
   return db.query(`
   INSERT INTO users (name, email, password) 
   VALUES ($1, $2, $3) 
